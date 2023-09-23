@@ -1,0 +1,32 @@
+{
+	"info": {
+		"_postman_id": "f5d7f8a2-547e-4248-9b44-459ad772021b",
+		"name": "Stream-Analytics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2658807"
+	},
+	"item": [
+		{
+			"name": "Stream Analytics Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/v1/stream/details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"v1",
+						"stream",
+						"details"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

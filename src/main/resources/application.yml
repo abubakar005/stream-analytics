@@ -1,0 +1,55 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: Stream Analytics Application
+
+# SSE Streaming APIs URLs
+streaming:
+  server:
+    api:
+      url: http://localhost:8080/
+    duration: 20
+
+# To show Actuator endpoints
+springdoc:
+  show-actuator: true
+
+# To show Prometheus endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+# Country code to time zone mappings
+app:
+  timezone:
+    country-code-to-timezone:
+      PT: UTC
+      CA: America/Toronto
+      US: America/Los_Angeles
+      RU: Europe/Moscow
+      ID: Asia/Jakarta
+      CN: Asia/Shanghai
+      SS: Africa/Juba
+      AF: Asia/Kabul
+      LT: Europe/Vilnius
+      IT: Europe/Rome
+      CO: America/Bogota
+      FR: Europe/Paris
+      BR: America/Sao_Paulo
+      AR: America/Argentina/Buenos_Aires
+      SE: Europe/Stockholm
+      NA: Africa/Windhoek
+      SI: Europe/Ljubljana
+      CZ: Europe/Prague
+      PH: Asia/Manila
+      MG: Indian/Antananarivo
+      PK: Asia/Karachi
+      PL: Europe/Warsaw
+      KP: America/Toronto
